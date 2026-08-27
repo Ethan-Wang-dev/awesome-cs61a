@@ -1,6 +1,6 @@
 # CS61A Spring 2026 Mainline
 
-The complete course track for building a strong programming foundation. This directory follows the [Spring 2026 official course site](https://www-inst.eecs.berkeley.edu/~cs61a/sp26/) and turns each topic into code, tests, and notes that can be revisited later.
+The complete course track for building a strong programming foundation. This directory follows the [Spring 2026 course-site archive](https://lr2933.github.io/cs61a-spring-2026/) and turns each topic into code, tests, and notes that can be revisited later. The [Berkeley-hosted archive](https://www-inst.eecs.berkeley.edu/~cs61a/sp26/) remains the canonical source when it is reachable.
 
 ## Coverage
 
