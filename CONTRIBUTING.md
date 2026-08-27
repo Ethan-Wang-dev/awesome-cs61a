@@ -17,3 +17,4 @@ This repository is primarily a personal study record. Suggestions are welcome wh
 
 For changes to course-facing content, include the official source URL and the date checked. Keep commits focused and explain how the change was verified.
 
+Unless explicitly requested otherwise, write repository documentation, notes, and code comments in English. `README.md` and `README.zh-CN.md` are the bilingual exceptions.
