@@ -28,7 +28,7 @@ A concise, version-aware guide to learning Berkeley CS61A and applying it to sof
 
 ## Start here
 
-1. [Spring 2026 official course site](https://www-inst.eecs.berkeley.edu/~cs61a/sp26/)
+1. [Spring 2026 course archive](https://lr2933.github.io/cs61a-spring-2026/) and [Berkeley original site](https://www-inst.eecs.berkeley.edu/~cs61a/sp26/)
 2. [Fall 2026 official course site](https://cs61a.org/fa26/) and [syllabus](https://cs61a.org/fa26/syllabus/)
 3. [Composing Programs textbook](https://www.composingprograms.com/)
 4. [PROGRESS.md](PROGRESS.md) for our learning progress and a reference for learners who already have programming experience

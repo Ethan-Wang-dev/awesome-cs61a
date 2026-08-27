@@ -1,6 +1,6 @@
 # CS61A Spring 2026 Mainline
 
-The complete course track for building a strong programming foundation. This directory follows the [Spring 2026 course-site archive](https://lr2933.github.io/cs61a-spring-2026/) and turns each topic into code, tests, and notes that can be revisited later. The [Berkeley-hosted archive](https://www-inst.eecs.berkeley.edu/~cs61a/sp26/) remains the canonical source when it is reachable.
+The complete course track for building a strong programming foundation. This directory uses the [Spring 2026 course-site archive](https://lr2933.github.io/cs61a-spring-2026/) for source material and turns each topic into code, tests, and notes that can be revisited later. The [Berkeley-hosted archive](https://www-inst.eecs.berkeley.edu/~cs61a/sp26/) is the original course site.
 
 ## Coverage
 
@@ -15,13 +15,12 @@ The complete course track for building a strong programming foundation. This dir
 labs/          # Course labs and local experiments
 homework/      # Topic practice and written reasoning
 projects/      # Hog, CATS, Ants, and other course projects
-slides/        # Lecture slide PDFs and small lecture-code examples
-study-guides/  # Midterm and final review guides
 notes/         # Mental models, debugging patterns, and complexity
+resources/     # External course-material links and provenance notes
 tests/         # Original tests and regression checks
 ```
 
-The `slides/` and `study-guides/` directories contain selected SP26 reference materials. Their source, retrieval date, and file scope are recorded in [`resources/README.md`](resources/README.md).
+Course slides, study guides, discussion worksheets, and starter archives stay at their source links. The [`resources/README.md`](resources/README.md) page keeps the entry points together; this repository stores our implementations, tests, notes, and progress evidence.
 
 ## Working method
 

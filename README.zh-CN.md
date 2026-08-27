@@ -28,7 +28,7 @@
 
 ## 从这里开始
 
-1. [Spring 2026 官方课程页](https://www-inst.eecs.berkeley.edu/~cs61a/sp26/)
+1. [Spring 2026 课程资料镜像](https://lr2933.github.io/cs61a-spring-2026/) 和 [Berkeley 原始课程页](https://www-inst.eecs.berkeley.edu/~cs61a/sp26/)
 2. [Fall 2026 官方课程页](https://cs61a.org/fa26/) 和 [syllabus](https://cs61a.org/fa26/syllabus/)
 3. [Composing Programs 教材](https://www.composingprograms.com/)
 4. [PROGRESS.md](PROGRESS.md)：查看我们自己的学习进度，也为有编程基础的学习者提供参考
