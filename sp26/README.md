@@ -15,9 +15,13 @@ The complete course track for building a strong programming foundation. This dir
 labs/          # Course labs and local experiments
 homework/      # Topic practice and written reasoning
 projects/      # Hog, CATS, Ants, and other course projects
+slides/        # Lecture slide PDFs and small lecture-code examples
+study-guides/  # Midterm and final review guides
 notes/         # Mental models, debugging patterns, and complexity
 tests/         # Original tests and regression checks
 ```
+
+The `slides/` and `study-guides/` directories contain selected SP26 reference materials. Their source, retrieval date, and file scope are recorded in [`resources/README.md`](resources/README.md).
 
 ## Working method
 
