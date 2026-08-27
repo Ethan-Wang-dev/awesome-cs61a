@@ -6,7 +6,7 @@ A concise, version-aware guide to learning Berkeley CS61A and applying it to sof
 
 ## What readers get
 
-- One coherent learning route instead of scattered CS61A links.
+- One coherent learning route built from the most useful CS61A resources.
 - A complete Spring 2026 baseline plus the important Fall 2026 additions.
 - Runnable practice, tests, and notes that explain why each topic matters.
 - Version differences and maintenance notes that remain useful after one semester.
@@ -21,9 +21,9 @@ A concise, version-aware guide to learning Berkeley CS61A and applying it to sof
 ## Principles
 
 - **Official first:** prefer primary course sources and record version/date when relevant.
-- **No duplicate, no answer mirror:** repeated topics stay in `sp26/`; copied or restricted solutions do not belong here.
+- **Focused scope:** repeated topics stay in `sp26/`, with original work and clear attribution throughout.
 - **Reproducible:** code should run, tests should be explainable, and progress should leave evidence.
-- **Versioned:** add a dated supplement for a new Berkeley offering instead of silently rewriting history.
+- **Versioned:** add a dated supplement for each new Berkeley offering and preserve the learning history.
 - **Small and maintainable:** keep the map clear, links current, and contributions focused.
 
 ## Start here
@@ -57,4 +57,4 @@ Update [PROGRESS.md](PROGRESS.md) at milestones with the files changed, verifica
 
 ## Integrity and attribution
 
-This is an independent project, not affiliated with UC Berkeley. Do not publish copied or restricted course solutions. Check the [official syllabus](https://cs61a.org/fa26/syllabus/) before using AI tools or publishing assignment-related files. Berkeley course materials retain their original terms; no license for original work is granted until a `LICENSE` file is added.
+This is an independent project with attribution to the official Berkeley course sources. Publication follows the course syllabus and preserves the original terms of Berkeley materials. Original work will receive a license when the repository is ready for reuse.
