@@ -31,7 +31,7 @@
 1. [Spring 2026 官方课程页](https://www-inst.eecs.berkeley.edu/~cs61a/sp26/)
 2. [Fall 2026 官方课程页](https://cs61a.org/fa26/) 和 [syllabus](https://cs61a.org/fa26/syllabus/)
 3. [Composing Programs 教材](https://www.composingprograms.com/)
-4. [PROGRESS.md](PROGRESS.md)：查看当前学习状态
+4. [PROGRESS.md](PROGRESS.md)：查看我们自己的学习进度，也为有编程基础的学习者提供参考
 
 每个作业都先运行本地测试；Berkeley 使用的测试工具是 [ok.py](https://github.com/okpy/ok)。
 

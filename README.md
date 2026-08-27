@@ -31,7 +31,7 @@ A concise, version-aware guide to learning Berkeley CS61A and applying it to sof
 1. [Spring 2026 official course site](https://www-inst.eecs.berkeley.edu/~cs61a/sp26/)
 2. [Fall 2026 official course site](https://cs61a.org/fa26/) and [syllabus](https://cs61a.org/fa26/syllabus/)
 3. [Composing Programs textbook](https://www.composingprograms.com/)
-4. [PROGRESS.md](PROGRESS.md) for the current learning state
+4. [PROGRESS.md](PROGRESS.md) for our learning progress and a reference for learners who already have programming experience
 
 Run the local tests supplied with each assignment; Berkeley's testing tool is [ok.py](https://github.com/okpy/ok).
 
