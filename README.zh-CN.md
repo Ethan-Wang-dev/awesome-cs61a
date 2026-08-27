@@ -49,8 +49,6 @@ awesome-cs61a/
     ├── gleam/  coding-agents/  browsers/  applications/  notes/
 ```
 
-这是一个 GitHub 仓库；`sp26/` 和 `fa26-supplement/` 是目录，不是嵌套仓库。
-
 ## 贡献与维护
 
 详见 [CONTRIBUTING.md](CONTRIBUTING.md)。欢迎提交失效链接、清晰解释、原创测试、无障碍修复和可复现性改进。

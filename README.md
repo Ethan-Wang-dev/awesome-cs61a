@@ -49,8 +49,6 @@ awesome-cs61a/
     ├── gleam/  coding-agents/  browsers/  applications/  notes/
 ```
 
-This is one GitHub repository; `sp26/` and `fa26-supplement/` are directories, not nested repositories.
-
 ## Contribute and maintain
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). Useful contributions include broken-link reports, clearer explanations, original tests, accessibility fixes, and reproducibility improvements.
