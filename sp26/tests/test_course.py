@@ -86,6 +86,26 @@ class CourseWorkflowTests(unittest.TestCase):
         self.assertNotEqual(completed.returncode, 0)
         self.assertNotIn("EOFError", completed.stdout + completed.stderr)
 
+    def test_invalid_ok_question_returns_failure(self):
+        completed = subprocess.run(
+            [
+                sys.executable,
+                str(course.REPO_ROOT / "sp26/tools/course.py"),
+                "test",
+                "hog",
+                "--",
+                "--question",
+                "0",
+            ],
+            input="n\n",
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+
+        self.assertNotEqual(completed.returncode, 0)
+        self.assertIn("Error loading assignment", completed.stdout + completed.stderr)
+
 
 if __name__ == "__main__":
     unittest.main()

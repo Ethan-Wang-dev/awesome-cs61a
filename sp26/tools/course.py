@@ -204,7 +204,9 @@ def run_assignment(item: dict[str, Any], ok_args: list[str]) -> int:
     print(output, end="" if output.endswith("\n") else "\n")
     if completed.returncode != 0:
         return completed.returncode
-    if re.search(r"# Error:|\bFailed:\s*[1-9]\d*\b", output):
+    if re.search(
+        r"# Error:|Error loading assignment:|\bFailed:\s*[1-9]\d*\b", output
+    ):
         return 1
     return 0
 
