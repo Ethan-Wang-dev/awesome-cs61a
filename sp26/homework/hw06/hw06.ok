@@ -1,0 +1,29 @@
+{
+    "name": "Homework 6",
+    "endpoint": "cal/cs61a/sp26/hw06",
+    "src": [
+        "hw06.py"
+    ],
+    "tests": {
+        "hw*.py": "doctest",
+        "tests/*.py": "ok_test"
+    },
+    "default_tests": [
+        "midsem_survey",
+        "VendingMachine",
+        "store_digits",
+        "deep_map_mut",
+        "prune_small",
+        "delete"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "help",
+        "followup",
+        "grading",
+        "analytics",
+        "unlock",
+        "backup"
+    ]
+}

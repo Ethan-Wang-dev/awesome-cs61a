@@ -1,0 +1,269 @@
+body{
+    margin: 0;
+    background-image: url('../static/assets/splash.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(11, 32, 98, 0.2);
+}
+
+
+.start-button{
+    position: absolute;
+    right: 60%;
+    top: 40%;
+    width: 170px;
+    height: 80px;
+    border-radius: 20px;
+    border-style: solid;
+    background-color: rgba(45, 190, 60, 0.8);
+    border-width: 4px;
+    border-color: rgba(20, 150, 20, 0.5);
+    color:white;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+
+.start-button:hover{
+    background-color: rgba(25, 150, 30, 0.70);
+}
+
+
+.main-window{
+    display: grid;
+    grid-template-columns: 1fr 15fr 1fr;
+}
+
+.middle-section{
+    display: grid;
+    grid-template-rows: 1fr 15fr 1fr;
+    height: 100vh;
+}
+
+.game-window{
+    border-style: none;
+    background-image: url('../static/assets/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 1fr 1.75fr 6.5fr;
+}
+
+.display-food-div, .display-turn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-food-div, .display-turn-div{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    width: 120px;
+    height: 50px;
+}
+
+
+.display-food-div{
+    background-color: rgb(13, 99, 180);
+    color: white;
+    margin-right: 40px;
+}
+
+
+.display-turn-div{
+    background-color: rgb(112, 12, 199);
+    color: white;
+}
+
+
+.ants-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.ant-btn{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 240, 240, 0.1);
+    border: solid;
+    border-color: rgba(54, 57, 235, 0.2);
+    border-width: 2px;
+    cursor: pointer;
+    padding: 2px 2px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.game-section{
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+}
+
+
+.tunnel-grid{
+    display: grid;
+    border-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.tile-btn {
+    position: relative;
+    padding: 4px;
+    border: none;
+    width: 100%;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+.tile-img{
+    -webkit-user-drag: none;
+    width: 100%;
+    height: 100%;
+}
+
+
+.insect-on-tile-container-img {
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+.insect-on-tile-img {
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+}
+
+.leaf-on-tile-img {
+    position: absolute;
+    width: 80%;
+    pointer-events: none;
+    z-index: 20;
+    opacity: 0.95;
+    top: 50%; /* not sure if this is helpful, gets overidden in js anyways */
+}
+
+
+.alert{
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+}
+
+.notification {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.25rem 2rem;
+    background-color: rgba(190, 40, 50, 1);
+    color: white;
+    border-radius: 5px;
+    opacity: 0.9;
+    z-index: 1000;
+    text-align: center;
+    white-space: nowrap;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+}
+
+.display-callout {
+    position: absolute;
+    top: 0px;
+    right: -10px;
+
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 900;
+    font-size: 150%;
+    color: #ffffff;
+    z-index: 100;
+    text-shadow:
+        2px 0px 0 #000,
+        -2px 0px 0 #000,
+        0 2px 0 #000,
+        0px -2px 0 #000,
+        2px 2px 0 #000,
+        -2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000;
+}
+
+
+  .beehive {
+    z-index: 10;
+  }
+
+  .HealthBarContainer {
+    position: absolute;
+    top: 0%;
+    left: 40%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 30%;
+    z-index: 200;
+}
+
+.HealthBarBackground {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    background-color: #303030;
+    border: 4px solid black;
+    border-radius: 999px;
+}
+
+.HealthBarFill {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    height: 60%;
+    border-radius: 999px;
+    transition: width 200ms ease-out, background-color 200ms ease-out;
+}
+
+.DamageCounter {
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    font-family: 'Fredoka', sans-serif; /* Use the font */
+    font-weight: 900; /* Extra Bold */
+    font-size: 200%;
+    color: #FF4444;
+    -webkit-text-stroke: 2px black; /* 2px length stroke */
+    animation: fadeInOut 1s ease-in-out;
+    z-index: 500;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');

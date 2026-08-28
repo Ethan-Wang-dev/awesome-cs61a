@@ -1,0 +1,183 @@
+{
+  "course": "CS61A",
+  "term": "Spring 2026",
+  "source_repo": "https://github.com/LR2933/cs61a-spring-2026",
+  "assignments": [
+    {
+      "id": "hw01",
+      "kind": "homework",
+      "path": "sp26/homework/hw01",
+      "editable": ["hw01.py"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/hw/hw01/hw01.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/hw/hw01/",
+      "runnable": true,
+      "optional": false
+    },
+    {
+      "id": "hw02",
+      "kind": "homework",
+      "path": "sp26/homework/hw02",
+      "editable": ["hw02.py"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/hw/hw02/hw02.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/hw/hw02/",
+      "runnable": true,
+      "optional": false
+    },
+    {
+      "id": "hw03",
+      "kind": "homework",
+      "path": "sp26/homework/hw03",
+      "editable": ["hw03.py"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/hw/hw03/hw03.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/hw/hw03/",
+      "runnable": true,
+      "optional": false
+    },
+    {
+      "id": "hw04",
+      "kind": "homework",
+      "path": "sp26/homework/hw04",
+      "editable": ["hw04.py"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/hw/hw04/hw04.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/hw/hw04/",
+      "runnable": true,
+      "optional": false
+    },
+    {
+      "id": "hw05",
+      "kind": "homework",
+      "path": "sp26/homework/hw05",
+      "editable": ["hw05.py"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/hw/hw05/hw05.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/hw/hw05/",
+      "runnable": true,
+      "optional": false
+    },
+    {
+      "id": "hw06",
+      "kind": "homework",
+      "path": "sp26/homework/hw06",
+      "editable": ["hw06.py"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/hw/hw06/hw06.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/hw/hw06/",
+      "runnable": true,
+      "optional": false
+    },
+    {
+      "id": "hw07",
+      "kind": "homework",
+      "path": "sp26/homework/hw07",
+      "editable": ["hw07.scm"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/hw/hw07/hw07.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/hw/hw07/",
+      "runnable": true,
+      "optional": false
+    },
+    {
+      "id": "hw08",
+      "kind": "homework",
+      "path": "sp26/homework/hw08",
+      "editable": ["hw08.scm"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/hw/hw08/hw08.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/hw/hw08/",
+      "runnable": true,
+      "optional": false
+    },
+    {
+      "id": "hw09",
+      "kind": "homework",
+      "path": "sp26/homework/hw09",
+      "editable": ["hw09.scm"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/hw/hw09/hw09.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/hw/hw09/",
+      "runnable": true,
+      "optional": false
+    },
+    {
+      "id": "hw10",
+      "kind": "homework",
+      "path": "sp26/homework/hw10",
+      "editable": ["hw10.sql"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/hw/hw10/hw10.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/hw/hw10/",
+      "runnable": true,
+      "optional": false
+    },
+    {
+      "id": "hw11",
+      "kind": "homework",
+      "path": "sp26/homework/hw11",
+      "editable": [],
+      "runner": null,
+      "source_archive": null,
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/hw/hw11/",
+      "runnable": false,
+      "optional": false
+    },
+    {
+      "id": "hog",
+      "kind": "project",
+      "path": "sp26/projects/hog",
+      "editable": ["hog.py"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/proj/hog/hog.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/proj/hog/",
+      "runnable": true,
+      "optional": false
+    },
+    {
+      "id": "cats",
+      "kind": "project",
+      "path": "sp26/projects/cats",
+      "editable": ["cats.py"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/proj/cats/cats.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/proj/cats/",
+      "runnable": true,
+      "optional": false
+    },
+    {
+      "id": "ants",
+      "kind": "project",
+      "path": "sp26/projects/ants",
+      "editable": ["ants.py"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/proj/ants/ants.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/proj/ants/",
+      "runnable": true,
+      "optional": false
+    },
+    {
+      "id": "scheme",
+      "kind": "project",
+      "path": "sp26/projects/scheme",
+      "editable": ["scheme_classes.py", "scheme_eval_apply.py", "scheme_forms.py"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/proj/scheme/scheme.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/proj/scheme/",
+      "runnable": true,
+      "optional": false
+    },
+    {
+      "id": "scheme-contest",
+      "kind": "project",
+      "path": "sp26/projects/optional/scheme-contest",
+      "editable": ["contest.scm"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/proj/scheme_contest/scheme_contest.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/proj/scheme_contest/",
+      "runnable": true,
+      "optional": true
+    }
+  ]
+}

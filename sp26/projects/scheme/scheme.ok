@@ -1,0 +1,45 @@
+{
+    "name": "Scheme Interpreter Project",
+    "endpoint": "cal/cs61a/sp26/scheme",
+    "src": [
+        "scheme_eval_apply.py",
+        "scheme_forms.py",
+        "scheme_classes.py",
+        "questions.scm"
+    ],
+    "tests": {
+        "tests/*.py": "ok_test",
+        "tests.scm": "scheme_test"
+    },
+    "default_tests": [
+        "eval_apply",
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "EC1",
+        "EC2",
+        "tests.scm"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "unlock",
+        "grading",
+        "analytics",
+        "collaborate",
+        "backup"
+    ]
+}
