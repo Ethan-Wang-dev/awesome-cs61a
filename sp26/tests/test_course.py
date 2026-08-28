@@ -1,5 +1,7 @@
 import contextlib
 import io
+import subprocess
+import sys
 import unittest
 
 from sp26.tools import course
@@ -17,7 +19,7 @@ class CourseWorkflowTests(unittest.TestCase):
         ids = [item["id"] for item in assignments]
 
         self.assertEqual(len(ids), len(set(ids)))
-        self.assertEqual(len(assignments), 15)
+        self.assertEqual(len(assignments), 16)
         for item in assignments:
             self.assertIn("path", item)
             self.assertIn("editable", item)
@@ -63,6 +65,26 @@ class CourseWorkflowTests(unittest.TestCase):
 
         self.assertNotEqual(result, 0)
         self.assertIn("documentation-only", output)
+
+    def test_incomplete_starter_does_not_leave_runner_input_error(self):
+        completed = subprocess.run(
+            [
+                sys.executable,
+                str(course.REPO_ROOT / "sp26/tools/course.py"),
+                "test",
+                "hw01",
+                "--",
+                "--question",
+                "a_plus_abs_b",
+            ],
+            input="n\n",
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+
+        self.assertNotEqual(completed.returncode, 0)
+        self.assertNotIn("EOFError", completed.stdout + completed.stderr)
 
 
 if __name__ == "__main__":

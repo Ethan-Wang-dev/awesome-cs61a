@@ -4,6 +4,7 @@ venv/
 env/
 __pycache__/
 *.py[cod]
+**/.ok_history
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
@@ -19,4 +20,3 @@ _build/
 *.beam
 target/
 secrets/
-
