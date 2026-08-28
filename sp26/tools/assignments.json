@@ -125,6 +125,138 @@
       "optional": false
     },
     {
+      "id": "lab00",
+      "kind": "lab",
+      "path": "sp26/labs/lab00",
+      "editable": ["lab00.py"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/lab/lab00/lab00.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/lab/lab00/",
+      "runnable": true,
+      "optional": false
+    },
+    {
+      "id": "lab01",
+      "kind": "lab",
+      "path": "sp26/labs/lab01",
+      "editable": ["lab01.py"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/lab/lab01/lab01.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/lab/lab01/",
+      "runnable": true,
+      "optional": false
+    },
+    {
+      "id": "lab02",
+      "kind": "lab",
+      "path": "sp26/labs/lab02",
+      "editable": ["lab02.py"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/lab/lab02/lab02.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/lab/lab02/",
+      "runnable": true,
+      "optional": false
+    },
+    {
+      "id": "lab03",
+      "kind": "lab",
+      "path": "sp26/labs/lab03",
+      "editable": ["lab03.py"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/lab/lab03/lab03.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/lab/lab03/",
+      "runnable": true,
+      "optional": false
+    },
+    {
+      "id": "lab04",
+      "kind": "lab",
+      "path": "sp26/labs/lab04",
+      "editable": ["lab04.py"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/lab/lab04/lab04.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/lab/lab04/",
+      "runnable": true,
+      "optional": false
+    },
+    {
+      "id": "lab05",
+      "kind": "lab",
+      "path": "sp26/labs/lab05",
+      "editable": ["lab05.py"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/lab/lab05/lab05.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/lab/lab05/",
+      "runnable": true,
+      "optional": false
+    },
+    {
+      "id": "lab06",
+      "kind": "lab",
+      "path": "sp26/labs/lab06",
+      "editable": ["lab06.py", "classes.py"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/lab/lab06/lab06.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/lab/lab06/",
+      "runnable": true,
+      "optional": false
+    },
+    {
+      "id": "lab07",
+      "kind": "lab",
+      "path": "sp26/labs/lab07",
+      "editable": ["lab07.py"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/lab/lab07/lab07.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/lab/lab07/",
+      "runnable": true,
+      "optional": false
+    },
+    {
+      "id": "lab08",
+      "kind": "lab",
+      "path": "sp26/labs/lab08",
+      "editable": ["lab08.scm"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/lab/lab08/lab08.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/lab/lab08/",
+      "runnable": true,
+      "optional": false
+    },
+    {
+      "id": "lab09",
+      "kind": "lab",
+      "path": "sp26/labs/lab09",
+      "editable": ["lab09.py"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/lab/lab09/lab09.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/lab/lab09/",
+      "runnable": true,
+      "optional": false
+    },
+    {
+      "id": "lab10",
+      "kind": "lab",
+      "path": "sp26/labs/lab10",
+      "editable": ["lab10.scm"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/lab/lab10/lab10.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/lab/lab10/",
+      "runnable": true,
+      "optional": false
+    },
+    {
+      "id": "lab11",
+      "kind": "lab",
+      "path": "sp26/labs/lab11",
+      "editable": ["lab11.sql"],
+      "runner": "ok",
+      "source_archive": "https://raw.githubusercontent.com/LR2933/cs61a-spring-2026/main/lab/lab11/lab11.zip",
+      "instructions": "https://lr2933.github.io/cs61a-spring-2026/lab/lab11/",
+      "runnable": true,
+      "optional": false
+    },
+    {
       "id": "hog",
       "kind": "project",
       "path": "sp26/projects/hog",

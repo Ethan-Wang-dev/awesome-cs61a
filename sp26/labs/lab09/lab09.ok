@@ -1,0 +1,25 @@
+{
+    "name": "Lab 9",
+    "endpoint": "cal/cs61a/sp26/lab09",
+    "src": [
+        "lab09.py"
+    ],
+    "tests": {
+        "lab*.py": "doctest",
+        "tests/*.py": "ok_test"
+    },
+    "default_tests": [
+        "using_link",
+        "floor_div",
+        "eval_and",
+        "eval_define"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "unlock",
+        "grading",
+        "analytics",
+        "backup"
+    ]
+}

@@ -2,7 +2,7 @@
 
 This is the code-first index for the Spring 2026 mainline. Open the listed edit target, read the official instructions, implement one question at a time, and run the local command.
 
-The workspace keeps the starter files and tests needed for local practice. Solutions, course media, and discussion/lab documents remain at the linked course pages.
+The workspace keeps the starter files and tests needed for local practice. Solutions, course media, and discussion documents remain at the linked course pages.
 
 ## Homework
 
@@ -19,6 +19,23 @@ The workspace keeps the starter files and tests needed for local practice. Solut
 | [HW09](homework/hw09/) | Programs as data and macros | `homework/hw09/hw09.scm` | `python3 sp26/tools/course.py test hw09` | [course page](https://lr2933.github.io/cs61a-spring-2026/hw/hw09/) |
 | [HW10](homework/hw10/) | SQL and data queries | `homework/hw10/hw10.sql` | `python3 sp26/tools/course.py test hw10` | [course page](https://lr2933.github.io/cs61a-spring-2026/hw/hw10/) |
 | [HW11](homework/hw11/) | Finale surveys and reflection | Reading entry; no code file | — | [course page](https://lr2933.github.io/cs61a-spring-2026/hw/hw11/) |
+
+## Labs
+
+| ID | Focus | Edit target | Local test | Instructions |
+| --- | --- | --- | --- | --- |
+| [Lab00](labs/lab00/) | Getting Started | `labs/lab00/lab00.py` | `python3 sp26/tools/course.py test lab00` | [course page](https://lr2933.github.io/cs61a-spring-2026/lab/lab00/) |
+| [Lab01](labs/lab01/) | Functions | `labs/lab01/lab01.py` | `python3 sp26/tools/course.py test lab01` | [course page](https://lr2933.github.io/cs61a-spring-2026/lab/lab01/) |
+| [Lab02](labs/lab02/) | Higher-order functions and lambda expressions | `labs/lab02/lab02.py` | `python3 sp26/tools/course.py test lab02` | [course page](https://lr2933.github.io/cs61a-spring-2026/lab/lab02/) |
+| [Lab03](labs/lab03/) | Recursion and Python lists | `labs/lab03/lab03.py` | `python3 sp26/tools/course.py test lab03` | [course page](https://lr2933.github.io/cs61a-spring-2026/lab/lab03/) |
+| [Lab04](labs/lab04/) | Tree recursion and data abstraction | `labs/lab04/lab04.py` | `python3 sp26/tools/course.py test lab04` | [course page](https://lr2933.github.io/cs61a-spring-2026/lab/lab04/) |
+| [Lab05](labs/lab05/) | Mutability and iterators | `labs/lab05/lab05.py` | `python3 sp26/tools/course.py test lab05` | [course page](https://lr2933.github.io/cs61a-spring-2026/lab/lab05/) |
+| [Lab06](labs/lab06/) | Object-oriented programming | `labs/lab06/lab06.py`, `labs/lab06/classes.py` | `python3 sp26/tools/course.py test lab06` | [course page](https://lr2933.github.io/cs61a-spring-2026/lab/lab06/) |
+| [Lab07](labs/lab07/) | Inheritance and linked lists | `labs/lab07/lab07.py` | `python3 sp26/tools/course.py test lab07` | [course page](https://lr2933.github.io/cs61a-spring-2026/lab/lab07/) |
+| [Lab08](labs/lab08/) | Scheme | `labs/lab08/lab08.scm` | `python3 sp26/tools/course.py test lab08` | [course page](https://lr2933.github.io/cs61a-spring-2026/lab/lab08/) |
+| [Lab09](labs/lab09/) | Interpreters | `labs/lab09/lab09.py` | `python3 sp26/tools/course.py test lab09` | [course page](https://lr2933.github.io/cs61a-spring-2026/lab/lab09/) |
+| [Lab10](labs/lab10/) | Programs as data and macros | `labs/lab10/lab10.scm` | `python3 sp26/tools/course.py test lab10` | [course page](https://lr2933.github.io/cs61a-spring-2026/lab/lab10/) |
+| [Lab11](labs/lab11/) | SQL | `labs/lab11/lab11.sql` | `python3 sp26/tools/course.py test lab11` | [course page](https://lr2933.github.io/cs61a-spring-2026/lab/lab11/) |
 
 ## Projects
 

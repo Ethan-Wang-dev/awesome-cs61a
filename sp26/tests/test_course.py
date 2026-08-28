@@ -19,10 +19,23 @@ class CourseWorkflowTests(unittest.TestCase):
         ids = [item["id"] for item in assignments]
 
         self.assertEqual(len(ids), len(set(ids)))
-        self.assertEqual(len(assignments), 16)
+        self.assertEqual(len(assignments), 28)
         for item in assignments:
             self.assertIn("path", item)
             self.assertIn("editable", item)
+
+    def test_manifest_includes_all_spring_2026_labs(self):
+        assignments = course.load_manifest()
+        by_id = course.assignment_index(assignments)
+
+        self.assertEqual(
+            {f"lab{number:02d}" for number in range(12)},
+            {assignment_id for assignment_id in by_id if assignment_id.startswith("lab")},
+        )
+        self.assertEqual(by_id["lab00"]["editable"], ["lab00.py"])
+        self.assertEqual(by_id["lab06"]["editable"], ["lab06.py", "classes.py"])
+        self.assertEqual(by_id["lab08"]["editable"], ["lab08.scm"])
+        self.assertEqual(by_id["lab11"]["editable"], ["lab11.sql"])
 
     def test_every_editable_path_exists(self):
         for item in course.load_manifest():
@@ -38,6 +51,8 @@ class CourseWorkflowTests(unittest.TestCase):
         self.assertEqual(result, 0)
         self.assertIn("hw01", output)
         self.assertIn("hw01.py", output)
+        self.assertIn("lab00", output)
+        self.assertIn("lab00.py", output)
         self.assertIn("scheme-contest", output)
 
     def test_list_marks_reading_and_optional_entries(self):
@@ -75,7 +90,7 @@ class CourseWorkflowTests(unittest.TestCase):
                 "hw01",
                 "--",
                 "--question",
-                "a_plus_abs_b",
+                "two_of_three",
             ],
             input="n\n",
             capture_output=True,
