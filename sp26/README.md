@@ -12,21 +12,25 @@ The complete course track for building a strong programming foundation. This dir
 ## Directory map
 
 ```text
+ASSIGNMENTS.md  # Exact homework/project edit targets and test commands
 labs/          # Course labs and local experiments
-homework/      # Topic practice and written reasoning
-projects/      # Hog, CATS, Ants, and other course projects
+homework/      # Spring 2026 homework starters and tests
+projects/      # Hog, Cats, Ants, Scheme, and contest projects
 notes/         # Mental models, debugging patterns, and complexity
 resources/     # External course-material links and provenance notes
-tests/         # Original tests and regression checks
+tests/         # Workflow tests and regression checks
+tools/         # Assignment manifest and local CLI
 ```
 
-Course slides, study guides, discussion worksheets, and starter archives stay at their source links. The [`resources/README.md`](resources/README.md) page keeps the entry points together; this repository stores our implementations, tests, notes, and progress evidence.
+Course slides, study guides, discussion worksheets, and lab PDFs stay at their source links. The programming starters and local tests are organized under [`ASSIGNMENTS.md`](ASSIGNMENTS.md); [`resources/README.md`](resources/README.md) keeps the external entry points together.
 
 ## Working method
 
-1. Get the lecture, reading, and starter files from the official course page.
-2. Implement the assignment independently and run its local tests.
+1. Get the lecture and reading materials from the official course page.
+2. Open the assignment target from [`ASSIGNMENTS.md`](ASSIGNMENTS.md), implement it independently, and run its local tests.
 3. Add a short note covering the key idea, one failed attempt, and the verification command.
 4. Update the repository-level [PROGRESS.md](../PROGRESS.md) after a milestone.
+
+Run `python3 tools/course.py list` to see every edit target, `python3 tools/course.py doctor` to check setup, and `python3 tools/course.py test <id>` to run one assignment.
 
 The companion [`../fa26-supplement/`](../fa26-supplement/) directory extends this mainline with Fall 2026 topics such as Coding Agents, Browsers, and Applications.

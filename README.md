@@ -31,9 +31,10 @@ A concise, version-aware guide to learning Berkeley CS61A and applying it to sof
 1. [Spring 2026 course archive](https://lr2933.github.io/cs61a-spring-2026/) and [Berkeley original site](https://www-inst.eecs.berkeley.edu/~cs61a/sp26/)
 2. [Fall 2026 official course site](https://cs61a.org/fa26/) and [syllabus](https://cs61a.org/fa26/syllabus/)
 3. [Composing Programs textbook](https://www.composingprograms.com/)
-4. [PROGRESS.md](PROGRESS.md) for our learning progress and a reference for learners who already have programming experience
+4. [SP26 assignment index](sp26/ASSIGNMENTS.md) for the exact homework/project files and local test commands
+5. [PROGRESS.md](PROGRESS.md) for our learning progress and a reference for learners who already have programming experience
 
-Run the local tests supplied with each assignment; Berkeley's testing tool is [ok.py](https://github.com/okpy/ok).
+Run `python3 sp26/tools/course.py doctor` once, then use the assignment-specific commands in [the index](sp26/ASSIGNMENTS.md). Berkeley's testing tool is [ok.py](https://github.com/okpy/ok).
 
 ## Layout
 
@@ -44,7 +45,9 @@ awesome-cs61a/
 ├── PROGRESS.md                # Dated progress and verification
 ├── CONTRIBUTING.md            # Contribution rules
 ├── sp26/                      # Complete Spring 2026 mainline
+│   ├── ASSIGNMENTS.md         # Edit targets and local test commands
 │   ├── labs/  homework/  projects/  tests/  notes/
+│   └── tools/                 # Manifest and local workflow CLI
 └── fa26-supplement/           # Fall 2026 additions and comparisons
     ├── gleam/  coding-agents/  browsers/  applications/  notes/
 ```
