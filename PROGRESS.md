@@ -25,7 +25,7 @@ This file records verified work, not intentions. Update it in the same commit wh
 
 | Module | Status | Evidence | Last updated |
 |---|---|---|---|
-| SP26 Weeks 1–3: functions, control, environments | Practiced | HW01–HW02 completed and checked | 2026-08-29 |
+| SP26 Weeks 1–3: functions, control, environments | Practiced | HW01–HW02 completed and checked | 2026-08-28 |
 | SP26 Weeks 4–6: recursion, sequences, objects, linked lists, trees | Practiced | HW03–HW04 completed and checked | 2026-08-29 |
 | SP26 Weeks 7–9: debugging, mutation, classes, generators, efficiency | Not started | — | — |
 | SP26 Weeks 10–12: functional programming, interpreters, SQL | Not started | — | — |
