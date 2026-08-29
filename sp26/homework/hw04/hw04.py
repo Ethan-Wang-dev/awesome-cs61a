@@ -12,7 +12,21 @@ def shuffle(s):
     ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
     """
     assert len(s) % 2 == 0, 'len(seq) must be even'
-    "*** YOUR CODE HERE ***"
+    ss = list(s)
+    if ss == []:
+        return []
+    s0 = ss[:len(ss)//2]
+    s1 = ss[len(ss)//2:]
+    res = []
+    while s0 != [] and s1 != []:
+        if len(s0) == len(s1):
+            res.append(s0[0])
+            s0 = s0[1:]
+        else:
+            res.append(s1[0])
+            s1 = s1[1:]
+    res.append(s1[0])
+    return res
 
 
 def deep_map(f, s):
@@ -37,7 +51,31 @@ def deep_map(f, s):
     >>> s3 is s2[1]
     True
     """
-    "*** YOUR CODE HERE ***"
+    # if type(s[0]) == list:
+    #     if len(s[0]) > 1: # [3, ...]
+    #         return [deep_map(f, s[0][0]), deep_map(f, s[0][1:])]
+    #     else: # [4]
+    #         return [f(s[0])]
+    # elif type(s[0]) != list: # number 1
+    #     if len(s) > 1:
+    #         return [f(s[0])].append(deep_map(f, s[1:]))
+    #     else:
+    #         return f(s[0])
+    for i in range(len(s)):
+        if type(s[i]) == list:
+            deep_map(f, s[i])
+        else:
+            s[i] = f(s[i])
+    ### A recursive version
+    # def walk(i):
+    #     if i == len(s):
+    #         return
+    #     if type(s[i]) == list:
+    #         deep_map(f, s[i])
+    #     else:
+    #         s[i] = f(s[i])
+    #     walk(i + 1)
+    # walk(0)
 
 
 SOURCE_FILE = __file__
@@ -46,12 +84,12 @@ SOURCE_FILE = __file__
 def planet(mass):
     """Construct a planet of some mass."""
     assert mass > 0
-    "*** YOUR CODE HERE ***"
+    return ['planet', mass]
 
 def mass(p):
     """Select the mass of a planet."""
     assert is_planet(p), 'must call mass on a planet'
-    "*** YOUR CODE HERE ***"
+    return p[1]
 
 def is_planet(p):
     """Whether p is a planet."""
@@ -103,7 +141,38 @@ def balanced(m):
     >>> check(SOURCE_FILE, 'balanced', ['Index'])
     True
     """
-    "*** YOUR CODE HERE ***"
+    # if is_planet(m):
+    #     return True
+    # if is_mobile(m):
+    #     l = end(left(m))
+    #     r = end(right(m))
+    #     l_len = length(left(m))
+    #     r_len = length(right(m))
+    #     # 两臂上都是planet
+    #     if is_planet(l) and is_planet(r):
+    #         l_mass = mass(l)
+    #         r_mass = mass(r)
+    #         return l_mass * l_len == r_mass * r_len
+    #     # 两臂都是mobile
+    #     if is_mobile(l) and is_mobile(r):
+    #         return (total_mass(l) * l_len == total_mass(r) * r_len) and balanced(l) and balanced(r)
+    #     # 一臂planet，一臂mobile
+    #     is_m = l if is_mobile(l) else r
+    #     is_p = l if is_planet(l) else r
+    #     m_len = length(is_m)
+    #     p_len = length(is_p)
+    #     return (total_mass(is_m) * m_len == mass(is_p) * p_len) and balanced(is_m) and balanced(is_p)
+    if is_planet(m):
+        return True
+    if is_mobile(m):
+        l = end(left(m))
+        r = end(right(m))
+        l_m = total_mass(l)
+        r_m = total_mass(r)
+        l_l = length(left(m))
+        r_l = length(right(m))
+        return balanced(l) and balanced(r) and (l_m * l_l == r_m * r_l)
+
 
 
 def prune_leaves(t, vals):
@@ -130,7 +199,18 @@ def prune_leaves(t, vals):
         5
       6
     """
-    "*** YOUR CODE HERE ***"
+    if is_leaf(t):
+        if label(t) in vals:
+            return None
+        else:
+            return t
+    if is_tree(t):
+        purned_bs = []
+        for b in branches(t):
+            purned_b = prune_leaves(b, vals)
+            if purned_b is not None:
+                purned_bs.append(purned_b)
+        return tree(label(t), purned_bs)
 
 
 SOURCE_FILE = __file__
@@ -145,7 +225,13 @@ def max_path_sum(t):
     >>> max_path_sum(t2) # 5, 2, 10
     17
     """
-    "*** YOUR CODE HERE ***"
+    if is_leaf(t):
+        return label(t)
+    # t is tree
+    label_bs = []
+    for b in branches(t):
+        label_bs.append(max_path_sum(b))
+    return max(label_bs) + label(t)
 
 
 def mobile(left, right):
