@@ -1,5 +1,7 @@
 SOURCE_FILE = __file__
 
+def if_eight_1(n):
+    return 1 if n == 8 else 0
 
 def num_eights(num):
     """Returns the number of times 8 appears as a digit of num.
@@ -24,8 +26,14 @@ def num_eights(num):
     ...       ['Assign', 'AnnAssign', 'AugAssign', 'NamedExpr', 'For', 'While'])
     True
     """
-    "*** YOUR CODE HERE ***"
+    if num // 10 == 0:
+        return if_eight_1(num)
+    else:
+        return if_eight_1(num % 10) + num_eights(num // 10)
 
+def get_distance(a, b):
+    """假设a是得到的个位数，b是得到的除掉个位数之外的"""
+    return abs(a - (b % 10))
 
 def digit_distance(num):
     """Determines the digit distance of num.
@@ -46,8 +54,13 @@ def digit_distance(num):
     ...       ['For', 'While'])
     True
     """
-    "*** YOUR CODE HERE ***"
+    if num // 10 == 0:
+        return 0
+    else:
+        return digit_distance(num // 10) + get_distance(num % 10, num // 10)
 
+def is_odd(n):
+    return False if n % 2 == 0 else True
 
 def interleaved_sum(num, f_odd, f_even):
     """Compute the sum f_odd(1) + f_even(2) + f_odd(3) + ..., up
@@ -70,7 +83,13 @@ def interleaved_sum(num, f_odd, f_even):
     >>> check(SOURCE_FILE, 'interleaved_sum', ['BitAnd', 'BitOr', 'BitXor']) # ban bitwise operators, don't worry about these if you don't know what they are
     True
     """
-    "*** YOUR CODE HERE ***"
+    if num >= 1:
+        if is_odd(num):
+            return f_odd(num) + interleaved_sum(num-1, f_odd, f_even)
+        else:
+            return f_even(num) + interleaved_sum(num-1, f_odd, f_even)
+    else:
+        return 0
 
 
 def next_smaller_dollar(bill):
@@ -106,7 +125,23 @@ def count_dollars(sum_needed):
     >>> check(SOURCE_FILE, 'count_dollars', ['While', 'For'])
     True
     """
-    "*** YOUR CODE HERE ***"
+    def count(remaining, bill):
+        if remaining == 0:
+            return 1
+        if remaining < 0:
+            return 0
+        if bill == 1:
+            return 1
+        return count(remaining - bill, bill) + count(remaining, next_smaller_dollar(bill))
+    # bill_lst = [1, 5, 10, 20, 50, 100]
+    # i = 6
+    # initial_bill = 1
+    # while i >= 1:
+    #     if sum_needed >= bill_lst[i - 1]:
+    #         initial_bill = bill_lst[i - 1]
+    #         break
+    #     i -= 1
+    return count(sum_needed, 100)
 
 
 def next_larger_dollar(bill):
@@ -142,7 +177,17 @@ def count_dollars_upward(sum_needed):
     >>> check(SOURCE_FILE, 'count_dollars_upward', ['While', 'For'])
     True
     """
-    "*** YOUR CODE HERE ***"
+    def count(acc, bill):
+        if acc == sum_needed:
+            return 1
+        if acc > sum_needed:
+            return 0
+        if bill == 100: # 只有100刀的可以用
+            if (sum_needed - acc) % 100 == 0:
+                return 1
+            else: return 0
+        return count(acc, next_larger_dollar(bill)) + count(acc + bill, bill)
+    return count(0, 1)
 
 
 def print_move(origin, destination):
@@ -193,5 +238,8 @@ def make_anonymous_factorial():
     ...     ['Assign', 'AnnAssign', 'AugAssign', 'NamedExpr', 'FunctionDef', 'Recursion'])
     True
     """
-    return 'YOUR_EXPRESSION_HERE'
+    return (lambda f: f(f))(
+        lambda f: 
+        lambda n: 1 if n == 0 else n * f(f)(n - 1)
+    )
 
