@@ -9,7 +9,15 @@ def hailstone(n):
     >>> next(hail_gen)
     1
     """
-    "*** YOUR CODE HERE ***"
+    while True:
+        if n % 2 == 0:
+            yield n
+            n //= 2
+        elif n % 2 == 1 and n != 1:
+            yield n
+            n = n * 3 + 1
+        else:
+            yield 1
 
 
 def merge(a, b):
@@ -30,11 +38,14 @@ def merge(a, b):
     a_val, b_val = next(a), next(b)
     while True:
         if a_val == b_val:
-            "*** YOUR CODE HERE ***"
+            yield a_val
+            a_val, b_val = next(a), next(b)
         elif a_val < b_val:
-            "*** YOUR CODE HERE ***"
-        else:
-            "*** YOUR CODE HERE ***"
+            yield a_val
+            a_val = next(a)
+        else:  # Keep a_val and advance b when a_val > b_val.
+            yield b_val
+            b_val = next(b)
 
 
 def stair_ways(n):
@@ -50,8 +61,17 @@ def stair_ways(n):
     >>> list(s_w) # Ensure you're not yielding extra
     []
     """
-    "*** YOUR CODE HERE ***"
-
+    if n >= 2:
+        # 1 step or 2 step
+        for ways in stair_ways(n - 1):
+            yield [1] + ways
+        for ways in stair_ways(n - 2):
+            yield [2] + ways
+    elif n == 1:
+        for ways in stair_ways(n - 1):
+            yield [1] + ways
+    else:  # n == 0
+        yield []
 
 def yield_paths(t, target):
     """
@@ -89,10 +109,12 @@ def yield_paths(t, target):
     [[0, 2], [0, 2, 1, 2]]
     """
     if label(t) == target:
-        yield ____
+        yield [label(t)]
+    # Continue searching branches for additional matching nodes.
     for b in branches(t):
-        for ____ in ____:
-            yield ____
+        for path in yield_paths(b, target):
+            if target in path:
+                yield [label(t)] + path
 
 
 
@@ -160,4 +182,3 @@ def copy_tree(t):
     5
     """
     return tree(label(t), [copy_tree(b) for b in branches(t)])
-
